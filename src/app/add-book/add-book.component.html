@@ -1,21 +1,31 @@
-<h3>Add a Book</h3>
-<form>
-    <div fxLayout="row" fxLayoutGap="8px">
-        <div class="text-content-input">
-            <div fxLayout="row" fxLayoutGap="8px">
-                <input placeholder="Please enter Book name">
-                <input placeholder="Please enter Author name">
+<div class="form-container">
+    <h3>Add a Book</h3>
+    <form>
+        <div fxLayout="row" fxLayoutGap="1.2em" fxLayoutAlign="center start">
+            <div fxFlex="2 0 auto" class="text-content-input" fxLayout="column" fxLayoutGap="1em">
+                <div fxLayout="row" fxLayoutGap="8px">
+                    <input class="inputs" placeholder="Please enter Book name">
+                    <input class="inputs" placeholder="Please enter Author name">
+                </div>
+                <textarea class="inputs" name="description" id="desc" rows="10">Enter Description</textarea>
+                <input type="file">
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <select name="" id="">
+                        <option value="read">Read</option>
+                        <option value="reading">Reading</option>
+                        <option value="toread">To Read</option>
+                    </select>
+                    <div fxLayout="row" fxLayoutGap="8px">
+                        <button>Submit</button>
+                        <button>Cancel</button>
+                    </div>
+                </div>
             </div>
-            <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+
+            <div fxFlex="1 0 auto" class="image-content-input" fxLayout="column" fxLayoutGap="1em">
+                <h3>Image Preview</h3>
+                <div class="image-preview"></div>
+            </div>
         </div>
-
-        <div class="image-content-input">
-            <input type="file">
-            <div class="image-preview"></div>
-        </div>
-    </div>
-
-
-
-
-</form>
+    </form>
+</div>

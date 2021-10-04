@@ -1,5 +1,22 @@
+.form-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.text-content-input {
+  textarea {
+    width: 100%;
+  }
+}
+
 .image-preview {
   width: 100px;
   height: 150px;
   background: #ccc;
+}
+
+.inputs {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #000;
 }
