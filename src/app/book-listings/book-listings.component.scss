@@ -1,3 +1,17 @@
+.book-card-container {
+  // padding: 20px;
+  background-color: #6a9bb4;
+}
+
+.book-card-header {
+  padding: 20px;
+  background: #ccc;
+}
+
+.book-card-body {
+  padding: 50px 20px 20px 20px;
+}
+
 .book-card {
   padding: 8px;
   background: #ccc;
@@ -6,7 +20,7 @@
 .book-card-cover {
   width: 150px;
   height: 200px;
-  background: blue;
+  background: rgb(228, 228, 228);
   margin-top: -30px;
   margin-bottom: 8px;
 }

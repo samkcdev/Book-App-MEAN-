@@ -1,14 +1,28 @@
-<div class="book-card-container" fxLayout="row wrap" fxLayoutGap="1em">
-    <div fxflex="1 0 calc(100% / 4)" class="book-card" fxLayout="row" fxLayoutGap="16px">
-        <div class="bok-card-left">
-            <div class="book-card-cover"></div>
-            Read
+<div class="book-card-container">
+    <div class="book-card-header" fxLayout="row" fxLayoutAlign="space-between center">
+        <input class="inputs" type="text" placeholder="Search">
+        <div>
+            Filter:
+            <select name="fitler" id="filter">
+                <option value="Read">Read</option>
+                <option value="Not read">Not Read</option>
+                <option value="Reading">Reading</option>
+            </select>
         </div>
 
-        <div class="book-card-detail">
-            <h4>Book Title</h4>
-            <p>Author Name</p>
-            <p>Description</p>
+    </div>
+    <div class="book-card-body" fxLayout="row wrap" fxLayoutGap="1em">
+        <div fxflex="1 0 calc(100% / 4)" class="book-card" fxLayout="row" fxLayoutGap="16px">
+            <div class="bok-card-left">
+                <div class="book-card-cover"></div>
+                Read
+            </div>
+
+            <div class="book-card-detail">
+                <h4>Book Title</h4>
+                <p>Author Name</p>
+                <p>Description</p>
+            </div>
         </div>
     </div>
 </div>
